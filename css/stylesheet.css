@@ -2,22 +2,172 @@
 	box-sizing: border-box;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body {
 	font-family:'Pontano Sans', sans-serif;
-	background-color: 	#FFFACD;
-	padding: 25px;
-	margin: 20px;
+	background-color: #CBFFA3;
+	margin: 0;
+
+}
+
+header h1{
+	font-size: 30px;
+	text-align: left;
+	padding: 50px;
+	display: inline;
+	padding-right: 600px;
+}
+header img{
+	max-height: 150px;
+	text-align: right;
+}
+
+.scrolled {
+  /* Step 1: Add styles for fixed nav */
+  position: fixed;
+  top:0;
+}
+
+.sticky_navbar{
+	height: 60px;
+}
+
+.fade-in {
+	position: relative;
+	top: 50%;
+	transform: translateY(-10%);
+	opacity: 0;
+	transition: all .3s ease-in-out;
+	z-index: 1;
+}
+
+.faded-in {
+	transform: translateY(-50%);
+	opacity: 1;
 }
 
 nav{
-	background-color:white;
-	text-transform: uppercase;
-	font-size: 0.75rem;
-	letter-spacing: .08em;
-	padding: 1.25rem 1.875rem;
-	display: inline-block;
 	width: 100%;
+	text-align: center;
+	background-color:white;
+	box-shadow: 0 3px 11px rgba(0, 0, 0, .1);
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 1px;
+	padding: 20px 20px;
+	 transition: all 300ms ease-out;
 }
-aside{
-	display: inline-block;
+
+nav a{
+	padding:18px;
+	text-decoration: none;
+	color: black;
 }
+	
+section #content_wrapper{
+	width: 100%;
+	background-image:url(../img/kitchen.jpg);
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-size: cover;
+
+}
+
+section article.image{
+	width: 100%;
+
+}
+
+#slogan{
+	display: none;
+	text-align: center;
+	padding: 200px;
+	font-style: italic;
+	font-size: 50px;
+}
+
+#test {
+	background-color: green;
+	height: 100px;
+}
+.navhover{
+	border-left: 2px solid #215732;
+}
+
+.body{
+	padding-left: 240px;
+	padding-right: 20px;
+}
+
+.green{
+	margin-right: 30px;
+	margin-left:30px;
+}
+
+.sub_nav{
+	position: fixed;
+    height: 100%;
+    top: 220px;
+    left: 0;
+    background: transparent;
+    width: 200px;
+    padding: 10px;
+}
+.sub_nav ul{
+	list-style-type: none;
+}
+
+.sub_nav a {
+	display: block;
+}
+.form {
+  background:rgba($form-bg,.9);
+  padding: 40px;
+  max-width:600px;
+  margin:40px auto;
+  border-radius:$br;
+  box-shadow:0 4px 10px 4px rgba($form-bg,.3);
+}
+
+input, textarea {
+  font-size:22px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  background:white;
+  border:1px solid gray-light;
+  border-radius:0;
+  transition:border-color .25s ease, box-shadow .25s ease;
+}
+
+button{
+	border-radius:10px;
+	padding:10px 0;
+	background-color: #000080;
+}
+
+.button-block {
+  display:block;
+  width:30%;
+  color:white;
+
+}
+
+p {
+	margin: 0px;
+}
+
+footer p{
+	clear: both;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
